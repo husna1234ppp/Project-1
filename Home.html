@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylhet Serenity Stays - Resort Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F8F8F8; /* Light gray background */
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        header {
+            background-color: #008000; /* Green for the header (like tea gardens) */
+            color: #FFFFFF;
+            padding: 25px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #006400; /* Dark green */
+            border-bottom: 2px solid #008000;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .resort-card {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .resort-card img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .features li {
+            list-style-type: '🌿 '; /* Custom bullet point */
+            margin-bottom: 5px;
+        }
+        .booking-form {
+            background-color: #E6FFE6; /* Light green background */
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .booking-form label, .booking-form input, .booking-form select, .booking-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .booking-form button {
+            background-color: #FF8C00; /* Orange button */
+            color: white;
+            font-size: 1.1em;
+            cursor: pointer;
+            border: none;
+        }
+        .booking-form button:hover {
+            background-color: #cc7000;
+        }
+        footer {
+            background-color: #333;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sylhet Serenity Stays</h1>
+        <p>Your Gateway to the Green Heaven of Bangladesh</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="welcome">
+            <h2>Welcome to Sylhet!</h2>
+            <p><strong>Sylhet</strong>, The Grand Tea View Resort ...Sylhet is home to several resorts, with luxury options like the five-star Grand Sylhet Hotel & Resort and the Grand Sultan Tea Resort & Golf in Srimangal, a region known for its tea gardens. These resorts offer a variety of amenities, including swimming pools, spas, fitness centers, and dining, while the Srimangal resort also features a golf course and movie theater. Many resorts are praised for their comfort, services, and beautiful natural surroundings, making them popular choices for both leisure and business travelers.</p>
+        </section>
+        
+        <hr>
+
+        <section id="resorts">
+    <h2>Featured Resorts</h2>
+
+    <div class="resort-card">
+        <h3>The Grand Tea View Resort </h3>
+        <img src="Img/Tea View Resort.jpeg" alt="Tea Garden View Resort Image" width="640" height="360">
+        <p>Located deep within the lush tea plantations near Sreemangal, this resort offers unparalleled panoramic views and luxury accommodations.</p>
+        <ul class="features">
+            <li>🌿 Private Balconies with Tea Garden View</li>
+            <li>🏊 Infinity Pool</li>
+            <li>🍽️ Multicuisine Restaurant</li>
+            <li>🚴‍♂️ Cycling Tracks</li>
+        </ul>
+        <p><strong>Price:</strong> BDT 8,000 / Night</p>
+	<p>Click <a href="https://example.com/more" target="_blank">here</a> to see more.</p>
+    </div>
+
+    <div class="resort-card">
+        <h3>Jaflong Riverside Lodge </h3>
+        <img src="Img/Jaflong Riverside Lodge.png" alt="Jaflong Riverside Lodge Image" width="640" height="360">
+        <p>Experience the crystal-clear waters of the Dauki River and the scenic hills of Meghalaya from this rustic yet comfortable lodge near Jaflong.</p>
+        <ul class="features">
+            <li>🛶 River Boating Access</li>
+            <li>🔥 Bonfire Pit</li>
+            <li>🍚 Local Sylheti Cuisine</li>
+            <li>⛰️ Mountain View Rooms</li>
+        </ul>
+        <p><strong>Price:</strong> BDT 6,500 / Night</p>
+	<p>Click <a href="https://example.com/more" target="_blank">here</a> to see more.</p>
+    </div>
+</section>
+
+        <hr>
+
+        <section id="booking">
+            <h2>Book Your Stay Now</h2>
+            <p>Fill out the form below to check availability and request a reservation. Our team will contact you shortly.</p>
+            
+            <form class="booking-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="resort">Select Resort:</label>
+                <select id="resort" name="resort" required>
+                    <option value="">-- Choose a Resort --</option>
+                    <option value="tea_view">The Grand Tea View Resort</option>
+                    <option value="riverside_lodge">Jaflong Riverside Lodge</option>
+                    <option value="other">Other Options</option>
+                </select>
+                
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                
+                <button type="submit">Request Booking</button>
+            </form>
+            
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact & Support</h2>
+            <p>For any queries, feel free to reach out to us:</p>
+            <address>
+                <strong>Email:</strong> <a href="mailto:booking@sylhetserenity.com">booking@sylhetserenity.com</a><br>
+                <strong>Phone:</strong> +880 1721-319501 (WhatsApp available)<br>
+                <strong>Office:</strong> Sylhet City Center, Sylhet, Bangladesh
+            </address>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sylhet Serenity Stays. All Rights Reserved. | Explore Bangladesh.</p>
+    </footer>
+
+</body>
+</html>
